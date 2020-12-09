@@ -11,10 +11,20 @@ namespace MembrosApi.Controllers
     [Route("[controller]")]
     public class MembrosController : ControllerBase
     {
-        private static readonly string[] Membros = new[]
+        private static readonly List<String> Membros = new List<String>
         {
             "Elayne", "Paloma", "Alexandre", "Alisson", "Italo", "Lucas", "Paschoal"
         };
+
+        private String addMembros (string name) 
+        {
+            if(name!=null)
+            {
+                Membros.Add(name);
+            }
+    
+            return name;
+        }
 
         private readonly ILogger<MembrosController> _logger;
 
@@ -26,7 +36,15 @@ namespace MembrosApi.Controllers
         [HttpGet]
         public IActionResult  Get()
         {
-             return Ok(Membros);
+            return Ok(Membros);
         }
+
+        [HttpPost]
+        public IActionResult Post([FromBody] String name)
+        {
+            addMembros(name);
+            return Ok("Nome adicionado com Sucesso!");
+        }
+
     }
 }
