@@ -8,7 +8,7 @@ namespace MembrosApi.Controllers
     {
         private static readonly string[] Membros = new[]
         {
-            "João", "Maria", "Lucas", "Luan", "Laís", "Caio"
+            ""
         };
 
         [HttpGet]
