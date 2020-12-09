@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,22 +11,40 @@ namespace MembrosApi.Controllers
     [Route("[controller]")]
     public class MembrosController : ControllerBase
     {
-        private static readonly string[] Membros = new[]
+        private static readonly List<String> Membros = new List<String>
         {
+
             "Elayne", "Paloma", "Alexandre", "Alisson", "Italo", "Lucas", "Paschoal"
         };
 
-        private readonly ILogger<MembrosController> _logger;
-
-        public MembrosController(ILogger<MembrosController> logger)
+        private static readonly List<String> MembroLR = new List<String>
         {
-            _logger = logger;
+            "Frodo", "Sam", "Gandalf", "Pinpin", "Smeagle"
+
+        };
+
+        private String addMembros (string name) 
+        {
+            if(name!=null)
+            {
+                Membros.Add(name);
+            }
+    
+            return name;
         }
 
         [HttpGet]
         public IActionResult  Get()
         {
-             return Ok(Membros);
+            return Ok(Membros);
         }
+
+        [HttpPost]
+        public IActionResult Post([FromBody] String name)
+        {
+            addMembros(name);
+            return Ok("Nome adicionado com Sucesso!");
+        }
+
     }
 }
