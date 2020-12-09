@@ -11,13 +11,6 @@ namespace MembrosApi.Controllers
             "João", "Maria", "Lucas", "Luan", "Laís" 
         };
 
-        private readonly ILogger<WeatherForecastController> _logger;
-
-        public MembrosController(ILogger<WeatherForecastController> logger)
-        {
-            _logger = logger;
-        }
-
         [HttpGet]
         public string[] Get()
         {
