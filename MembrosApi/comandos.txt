@@ -1,0 +1,6 @@
+dotnet new webapi -n MembrosApi
+dotnet restore - Restaura as dependências
+dotnet build - Compila o projeto
+dotnet run
+Caso de erro ( dotnet dev-certs https --trust)
+
