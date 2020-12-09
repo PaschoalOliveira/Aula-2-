@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,7 +14,7 @@ namespace MembrosApi.Controllers
         private static readonly List<String> Membros = new List<String>
         {
 
-            "Elayne", "Paloma", "Alexandre", "Alisson", "Italo", "Lucas"
+            "Elayne", "Paloma", "Alexandre", "Alisson", "Italo", "Lucas", "Paschoal"
         };
 
         private static readonly List<String> MembroLR = new List<String>
@@ -31,13 +31,6 @@ namespace MembrosApi.Controllers
             }
     
             return name;
-        }
-
-        private readonly ILogger<MembrosController> _logger;
-
-        public MembrosController(ILogger<MembrosController> logger)
-        {
-            _logger = logger;
         }
 
         [HttpGet]
