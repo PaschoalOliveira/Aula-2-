@@ -13,7 +13,12 @@ namespace MembrosApi.Controllers
     {
         private static readonly List<String> Membros = new List<String>
         {
-            "Elayne", "Paloma", "Alexandre", "Alisson", "Italo", "Lucas", "Paschoal"
+            "Elayne", "Paloma", "Alexandre", "Alisson", "Italo", "Lucas"
+        };
+
+        private static readonly List<String> MembroLR = new List<String>
+        {
+            "Frodo", "Sam", "Gandalf", "Pinpin", "Smeagle"
         };
 
         private String addMembros (string name) 
