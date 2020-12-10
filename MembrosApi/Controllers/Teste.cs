@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace MembrosApi.Controllers
 {
     public class Teste
@@ -8,8 +10,7 @@ namespace MembrosApi.Controllers
             "Hermione",
             "Rony"
         };
-
-        List<string> querryAllPersons = from persons in harryPotter
+        List<string> querryAllPersons = from persons in HarryPotter1
                                         where persons == "Harry"
                                         select persons;
         
