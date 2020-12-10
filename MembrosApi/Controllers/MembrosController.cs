@@ -46,15 +46,5 @@ namespace MembrosApi.Controllers
             return Ok("Nome adicionado com Sucesso!");
         }
 
-        [HttpGet("{name}")] // https://localhost:5001/Membros/Elayne
-        public IActionResult pesquisarPorNome(string name)
-        {
-            var nome = from membro in Membros 
-                    where membro.Equals(name)
-                    select membro;
-
-            return Ok(nome);
-        }
-
     }
 }
