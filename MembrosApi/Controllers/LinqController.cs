@@ -72,9 +72,8 @@ namespace MembrosApi.Controllers
             return sort;
         }
 
-        [HttpDelete("{idade}​​")]
-        [Route("apagarIdade")]
-        public string deletarIdade([FromBody] int idade)
+        [HttpDelete]
+        public string Delete(int idade) // https://localhost:5001/Linq/?idade=12
         {
             if (isValid(idade) && exist(idade))
             {
@@ -84,6 +83,32 @@ namespace MembrosApi.Controllers
 
             return "Não é possivel excluir";
         }
+
+        [HttpPost]
+        public string POST(int idade) // https://localhost:5001/Linq/?idade=12
+        {
+            if (isValid(idade) && !exist(idade))
+            {
+                if (idade > 76 && idade < 99)
+                {
+                    idades.Add(idade);
+                    return "Parabens, está superando a expectativa de vida no Brasil =)";
+                }
+                else 
+                if (idade >=100)
+                {
+                    return "Acredito que está pessoas esteja morta. Não posso inserir um morto =)";
+                } 
+                else 
+                {
+                    idades.Add(idade);
+                    return "Beleza =)";
+                }
+            }
+
+            return "Idade invalida ou já existe. Tente outra vez !";
+        }
+
 
         public bool exist(int idade)
         {
@@ -98,7 +123,6 @@ namespace MembrosApi.Controllers
             if (idade.GetType() == typeof(int)) return true;
             return false;
         }
-
 
     }
 }
