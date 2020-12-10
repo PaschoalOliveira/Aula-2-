@@ -80,14 +80,8 @@ namespace MembrosApi.Controllers
         {
             if (isValid(idade) && exist(idade))
             {
-                var idadeEscolhida = idades.Any(cli => cli == idade);
-                
-                if (idadeEscolhida)
-                {
-                    idades.Remove(idade);
-                    return "Excluido =)";
-                }
-
+                idades.Remove(idade);
+                return "Excluido =)";
             }
 
             return "Não é possivel excluir";
@@ -95,7 +89,9 @@ namespace MembrosApi.Controllers
 
         public bool exist(int idade)
         {
-            if (idades.IndexOf(idade) >= 0) return true;
+            var idadeEscolhida = idades.Any(cli => cli == idade);
+            
+            if (idadeEscolhida) return true;
             return false;
         }
 
