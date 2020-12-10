@@ -17,7 +17,7 @@ namespace MembrosApi.Controllers
         };
 
         [HttpGet]
-        public IActionResult  Get()
+        public IActionResult Get()
         {
             return Ok(idades);
         }
@@ -26,10 +26,10 @@ namespace MembrosApi.Controllers
         [Route("maiorDeIdade")]
         public String maiorDeIdade()
         {
-            var maiorDeIdade = from idade in idades where idade >=18 select idade;
+            var maiorDeIdade = from idade in idades where idade >= 18 select idade;
             var qntMaiorDeIdade = maiorDeIdade.Count();
 
-            return  String.Format("Existe {0} pessoas maiores de idade",qntMaiorDeIdade);
+            return String.Format("Existe {0} pessoas maiores de idade", qntMaiorDeIdade);
         }
 
         [HttpGet]
@@ -39,7 +39,7 @@ namespace MembrosApi.Controllers
             var maiorDeIdade = from idade in idades where idade < 18 select idade;
             var qntMaiorDeIdade = maiorDeIdade.Count();
 
-            return String.Format("Existe {0} pessoas menores de idade",qntMaiorDeIdade);
+            return String.Format("Existe {0} pessoas menores de idade", qntMaiorDeIdade);
         }
 
         [HttpGet]
@@ -47,22 +47,22 @@ namespace MembrosApi.Controllers
         public String qntAdolescente()
         {
             int qntAdolescente = idades.Count(idade => idade >= 12 && idade <= 18);
-            return String.Format("Existe {0} adolescentes",qntAdolescente);
+            return String.Format("Existe {0} adolescentes", qntAdolescente);
         }
 
         [HttpGet]
         [Route("qntCriancas")]
         public String qntCriancas()
         {
-           var qntCriancas = idades.Count(idade => idade < 12);
-           return String.Format("Existe {0} crianças",qntCriancas);
+            var qntCriancas = idades.Count(idade => idade < 12);
+            return String.Format("Existe {0} crianças", qntCriancas);
         }
 
         [HttpGet]
         [Route("somaIdade")]
         public String somaDasIdades()
         {
-           var somaDasIdades = idades.Sum();
+            var somaDasIdades = idades.Sum();
             return string.Format("Soma das idades: {0}", somaDasIdades);
         }
 
@@ -70,34 +70,41 @@ namespace MembrosApi.Controllers
         [Route("ordenaIdade")]
         public IEnumerable<int> ordenacaoDasIdades()
         {
-           IEnumerable<int> sort = from idade in idades orderby idade select idade;
-           return sort;
+            IEnumerable<int> sort = from idade in idades orderby idade select idade;
+            return sort;
         }
 
         [HttpDelete("{idade}​​")]
         [Route("apagarIdade")]
         public string deletarIdade([FromBody] int idade)
         {
-           if(isValid(idade) && exist(idade))
-           {
-               idades.Remove(idade);
-               return "Excluido =)";
-           }
+            if (isValid(idade) && exist(idade))
+            {
+                var idadeEscolhida = idades.Any(cli => cli == idade);
+                
+                if (idadeEscolhida)
+                {
+                    idades.Remove(idade);
+                    return "Excluido =)";
+                }
 
-           return "Não é possivel excluir";
+            }
+
+            return "Não é possivel excluir";
         }
 
-        public bool exist (int idade) 
+        public bool exist(int idade)
         {
-            if(idades.IndexOf(idade)>=0) return true;
+            if (idades.IndexOf(idade) >= 0) return true;
             return false;
         }
 
-        public bool isValid (int idade)
+        public bool isValid(int idade)
         {
             if (idade.GetType() == typeof(int)) return true;
             return false;
         }
+
 
     }
 }
