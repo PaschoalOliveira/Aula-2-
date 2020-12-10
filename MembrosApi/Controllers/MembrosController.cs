@@ -19,7 +19,7 @@ namespace MembrosApi.Controllers
 
         private static readonly List<String> MembroLR = new List<String>
         {
-            "Frodo", "Sam", "Gandalf", "Pinpin", "Smeagle"
+            "Frodo", "Sam", "Gandalf", "Pinpin", "Smeagle", "Aragorn", "Bilbo"
 
         };
 
