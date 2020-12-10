@@ -35,3 +35,40 @@ C:\Users\elayne\Documents\aulaPaschoal\Aula-2-\MembrosApi\obj\Debug\net5.0\Membr
 C:\Users\elayne\Documents\aulaPaschoal\Aula-2-\MembrosApi\obj\Debug\net5.0\ref\MembrosApi.dll
 C:\Users\elayne\Documents\aulaPaschoal\Aula-2-\MembrosApi\obj\Debug\net5.0\MembrosApi.pdb
 C:\Users\elayne\Documents\aulaPaschoal\Aula-2-\MembrosApi\obj\Debug\net5.0\MembrosApi.genruntimeconfig.cache
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\appsettings.Development.json
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\appsettings.json
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\MembrosApi.exe
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\MembrosApi.deps.json
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\MembrosApi.runtimeconfig.json
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\MembrosApi.runtimeconfig.dev.json
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\MembrosApi.dll
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\ref\MembrosApi.dll
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\MembrosApi.pdb
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\obj\Debug\net5.0\MembrosApi.csprojAssemblyReference.cache
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\obj\Debug\net5.0\MembrosApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\obj\Debug\net5.0\MembrosApi.AssemblyInfoInputs.cache
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\obj\Debug\net5.0\MembrosApi.AssemblyInfo.cs
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\obj\Debug\net5.0\MembrosApi.csproj.CoreCompileInputs.cache
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\obj\Debug\net5.0\MembrosApi.MvcApplicationPartsAssemblyInfo.cs
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\obj\Debug\net5.0\MembrosApi.MvcApplicationPartsAssemblyInfo.cache
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\obj\Debug\net5.0\staticwebassets\MembrosApi.StaticWebAssets.Manifest.cache
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\obj\Debug\net5.0\staticwebassets\MembrosApi.StaticWebAssets.xml
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\obj\Debug\net5.0\scopedcss\bundle\MembrosApi.styles.css
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\obj\Debug\net5.0\MembrosApi.RazorTargetAssemblyInfo.cache
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\obj\Debug\net5.0\MembrosApi.csproj.CopyComplete
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\obj\Debug\net5.0\MembrosApi.dll
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\obj\Debug\net5.0\ref\MembrosApi.dll
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\obj\Debug\net5.0\MembrosApi.pdb
+D:\Curso Solutis\cursonet\aula3_git\Aula-2-\MembrosApi\obj\Debug\net5.0\MembrosApi.genruntimeconfig.cache

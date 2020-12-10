@@ -586,19 +586,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\elayne\\.nuget\\packages\\": {}
+    "C:\\Users\\Paschoal\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elayne\\Documents\\aulaPaschoal\\Aula-2-\\MembrosApi\\MembrosApi.csproj",
+      "projectUniqueName": "D:\\Curso Solutis\\cursonet\\aula3_git\\Aula-2-\\MembrosApi\\MembrosApi.csproj",
       "projectName": "MembrosApi",
-      "projectPath": "C:\\Users\\elayne\\Documents\\aulaPaschoal\\Aula-2-\\MembrosApi\\MembrosApi.csproj",
-      "packagesPath": "C:\\Users\\elayne\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\elayne\\Documents\\aulaPaschoal\\Aula-2-\\MembrosApi\\obj\\",
+      "projectPath": "D:\\Curso Solutis\\cursonet\\aula3_git\\Aula-2-\\MembrosApi\\MembrosApi.csproj",
+      "packagesPath": "C:\\Users\\Paschoal\\.nuget\\packages\\",
+      "outputPath": "D:\\Curso Solutis\\cursonet\\aula3_git\\Aula-2-\\MembrosApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\elayne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Paschoal\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
