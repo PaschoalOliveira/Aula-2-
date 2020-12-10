@@ -44,7 +44,7 @@ namespace MembrosApi.Controllers
         [Route("qntAdolescente")]
         public String qntAdolescente()
         {
-            int qntAdolescente = idades.Count(idade => idade >= 12 && idade <= 18);
+            int qntAdolescente = idades.Count(idade => idade >= 12 && idade < 18);
             return String.Format("Existe {0} adolescentes", qntAdolescente);
         }
 
