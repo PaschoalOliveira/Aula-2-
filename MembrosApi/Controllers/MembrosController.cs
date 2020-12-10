@@ -41,25 +41,25 @@ namespace MembrosApi.Controllers
 
         [HttpGet("{​​name}​​")]
         public IActionResult pesquisarPorNome(string name)
-        {​​
+        {
             var nome = from membro in Membros
             where membro.Equals(name)
             select membro;
 
             return Ok(nome);
-        }​​
+        }
 
         [HttpGet]
         [Route("ordenar")]
         public IActionResult Ordenar()
-        {​​
+        {
             IEnumerable<string> sortAscendingQuery =
             from membro in Membros
             orderby membro
             select membro;
 
             return Ok(sortAscendingQuery);
-        }​​
+        }
 
         [HttpPost]
         public IActionResult Post([FromBody] String name)
