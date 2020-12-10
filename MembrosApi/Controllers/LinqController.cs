@@ -1,9 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace MembrosApi.Controllers
 {
@@ -90,7 +88,7 @@ namespace MembrosApi.Controllers
         public bool exist(int idade)
         {
             var idadeEscolhida = idades.Any(cli => cli == idade);
-            
+
             if (idadeEscolhida) return true;
             return false;
         }
