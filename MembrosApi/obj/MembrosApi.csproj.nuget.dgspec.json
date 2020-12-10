@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Curso Solutis\\cursonet\\aula3_git\\Aula-2-\\MembrosApi\\MembrosApi.csproj": {}
+    "C:\\Users\\elayne\\Documents\\Aula-2-\\MembrosApi\\MembrosApi.csproj": {}
   },
   "projects": {
-    "D:\\Curso Solutis\\cursonet\\aula3_git\\Aula-2-\\MembrosApi\\MembrosApi.csproj": {
+    "C:\\Users\\elayne\\Documents\\Aula-2-\\MembrosApi\\MembrosApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Curso Solutis\\cursonet\\aula3_git\\Aula-2-\\MembrosApi\\MembrosApi.csproj",
+        "projectUniqueName": "C:\\Users\\elayne\\Documents\\Aula-2-\\MembrosApi\\MembrosApi.csproj",
         "projectName": "MembrosApi",
-        "projectPath": "D:\\Curso Solutis\\cursonet\\aula3_git\\Aula-2-\\MembrosApi\\MembrosApi.csproj",
-        "packagesPath": "C:\\Users\\Paschoal\\.nuget\\packages\\",
-        "outputPath": "D:\\Curso Solutis\\cursonet\\aula3_git\\Aula-2-\\MembrosApi\\obj\\",
+        "projectPath": "C:\\Users\\elayne\\Documents\\Aula-2-\\MembrosApi\\MembrosApi.csproj",
+        "packagesPath": "C:\\Users\\elayne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elayne\\Documents\\Aula-2-\\MembrosApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Paschoal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\elayne\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,28 +37,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[5.0.0, )",
-              "noWarn": [
-                "NU1605"
-              ]
-            },
-            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
-              "target": "Package",
-              "version": "[5.0.0, )",
-              "noWarn": [
-                "NU1605"
-              ]
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.6.3, )"
-            }
-          },
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
