@@ -4,3 +4,45 @@ dotnet build - Compila o projeto
 dotnet run
 Caso de erro ( dotnet dev-certs https --trust)
 
+====================================================
+Git
+====================================================
+
+Primeiros Passos :
+    git clone /caminho/para/o/repositório (crie uma cópia de trabalho em um repositório local)
+    git add . (adiciona)
+    git commit -m "comentários das alterações" (confirmar estas mudanças realizadas)
+    git push origin master (envia mudancas para ramo master)
+    git pull (incorpora mudanças de um repositório remoto para o branch local.)
+
+Deletar branch :
+    git branch -d nome-da-branch (remove branch local)
+    git branch -D nome-da-branch (forcar remoção da branch local)
+    git push origin --delete nome-da-branch (remove branch remota)
+
+git branch -r (visualiza as branchs remotas)
+git branch develop (cria uma branch chamada develop)
+
+git fetch (download dos ultimos commits)
+git fetch --all (irá atualizar todas as cópias locais de ramos remotos)
+
+git checkout develop (indo para branch develop)
+git diff <branch origem> <branch destino>  (antes de fazer o merge, podemos ve a diferenca)
+
+git rm -r --cached . (você prepara um arquivo para remoção, mas não o remove do diretório de trabalho. O arquivo será mostrado como não rastreado)
+git pull origin master --allow-unrelated-histories (qnd há conflitos de histories)
+
+
+====================================================
+Git flow
+====================================================
+
+git flow init
+git branch
+git flow feature start “Busca de Membros”
+git branch
+
+Cria arquivo, commita
+git push --set-upstream origin feature/TesteElayne
+git flow feature finish nome_feature
+git push --set-upstream . develop
