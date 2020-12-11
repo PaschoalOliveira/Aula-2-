@@ -28,6 +28,12 @@ Primeiros Passos :
     git push origin master (envia mudancas para ramo master)
     git pull (incorpora mudanças de um repositório remoto para o branch local.)
 
+Reset Commit :
+    git reset <numero do commit> (reseta o repositório para o estado do último commit. Arquivos nao sao alterados)
+    git reset --hard <numero do commit> (Neste caso as alterações nos arquivos também serão desfeitas com o commit)
+    git revert <numero do commit> (reverte commit mais antigo.Apagará todos os commits na frente deste)
+
+
 Deletar branch :
     git branch -d nome-da-branch (remove branch local)
     git branch -D nome-da-branch (forcar remoção da branch local)
