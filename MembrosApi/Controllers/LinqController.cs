@@ -73,21 +73,20 @@ namespace MembrosApi.Controllers
         }
 
         [HttpDelete]
-        public string Delete(int idade) // https://localhost:5001/Linq/?idade=12
+        public string Delete([FromBody] int idade) 
         {
-            if (isValid(idade) && exist(idade))
-            {
+           if(idades.Any(cli => cli == idade) && idade.GetType() == typeof(int))
+           {
                 idades.Remove(idade);
                 return "Excluido =)";
-            }
-
-            return "Não é possivel excluir";
+           }
+                return "Não é possível excluir =(";
         }
 
         [HttpPost]
-        public string POST(int idade) // https://localhost:5001/Linq/?idade=12
+        public string POST([FromBody] int idade)
         {
-            if (isValid(idade) && !exist(idade))
+            if(!(idades.Any(cli => cli == idade)) && idade.GetType() == typeof(int))
             {
                 if (idade > 76 && idade < 99)
                 {
@@ -105,23 +104,7 @@ namespace MembrosApi.Controllers
                     return "Beleza =)";
                 }
             }
-
             return "Idade invalida ou já existe. Tente outra vez !";
-        }
-
-
-        public bool exist(int idade)
-        {
-            var idadeEscolhida = idades.Any(cli => cli == idade);
-
-            if (idadeEscolhida) return true;
-            return false;
-        }
-
-        public bool isValid(int idade)
-        {
-            if (idade.GetType() == typeof(int)) return true;
-            return false;
         }
 
     }
