@@ -43,6 +43,6 @@ git flow feature start “Busca de Membros”
 git branch
 
 Cria arquivo, commita
-git push --set-upstream origin feature/TesteElayne
+git push --set-upstream origin nome_feature
 git flow feature finish nome_feature
-git push --set-upstream . develop
+git push --set-upstream origin develop
