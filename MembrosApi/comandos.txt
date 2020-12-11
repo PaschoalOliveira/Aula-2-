@@ -1,12 +1,25 @@
+Criacao de Webapi 
+=================================================
+
 dotnet new webapi -n MembrosApi
 dotnet restore - Restaura as dependências
 dotnet build - Compila o projeto
 dotnet run
+dotnet watch run
 Caso de erro ( dotnet dev-certs https --trust)
 
 ====================================================
 Git
-====================================================
+
+Configurações :
+    git config --global user.name "Fulano de Tal" (seu nome)
+    git config --global user.email fulanodetal@exemplo.br (seu email)
+
+Chave SSH :
+    ssh-keygen -t ed25519 -C "your_email@example.com" (O comando criará uma nova chave SSH, usando o e-mail fornecido)
+        Sua chave será salva no local padrao (esta pasta fica oculta tanto no windows quanto no linux)
+        Digite uma frase secreta segura no prompt qnd for solicitado
+    Copie sua chave para o git
 
 Primeiros Passos :
     git clone /caminho/para/o/repositório (crie uma cópia de trabalho em um repositório local)
@@ -32,15 +45,13 @@ git diff <branch origem> <branch destino>  (antes de fazer o merge, podemos ve a
 git rm -r --cached . (você prepara um arquivo para remoção, mas não o remove do diretório de trabalho. O arquivo será mostrado como não rastreado)
 git pull origin master --allow-unrelated-histories (qnd há conflitos de histories)
 
-
 ====================================================
 Git flow
-====================================================
 
 git flow init
-git branch
-git flow feature start “Busca de Membros”
-git branch
+git branch (apenas para verificacao de criacao)
+git flow feature start “Busca de Membros” (starta uma nova feature)
+git branch (apenas para verificacao de criacao)
 
 Cria arquivo, commita
 git push --set-upstream origin nome_feature
