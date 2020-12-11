@@ -25,6 +25,7 @@ Primeiros Passos :
     git clone /caminho/para/o/repositório (crie uma cópia de trabalho em um repositório local)
     git add . (adiciona)
     git commit -m "comentários das alterações" (confirmar estas mudanças realizadas)
+    git -am commit "comentários das alterações" (adiciona e comita ao mesmo tempo)
     git push origin master (envia mudancas para ramo master)
     git pull (incorpora mudanças de um repositório remoto para o branch local.)
 
@@ -32,7 +33,7 @@ Reset Commit :
     git reset <numero do commit> (reseta o repositório para o estado do último commit. Arquivos nao sao alterados)
     git reset --hard <numero do commit> (Neste caso as alterações nos arquivos também serão desfeitas com o commit)
     git revert <numero do commit> (reverte commit mais antigo.Apagará todos os commits na frente deste)
-
+    git reset --hard head (pega o primeiro commit)
 
 Deletar branch :
     git branch -d nome-da-branch (remove branch local)
