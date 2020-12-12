@@ -1,12 +1,32 @@
+<<<<<<< HEAD
 
 *.rsuser
+=======
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+nupkg/
+
+# Visual Studio Code
+.vscode
+
+# Rider
+.idea
+
+# User-specific files
+>>>>>>> a9ae1d7f751c051c91ce407d4413a2c5384b7d90
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
+<<<<<<< HEAD
 *.userprefs
 
 mono_crash.*
+=======
+>>>>>>> a9ae1d7f751c051c91ce407d4413a2c5384b7d90
 
 # Build results
 [Dd]ebug/
@@ -15,6 +35,7 @@ mono_crash.*
 [Rr]eleases/
 x64/
 x86/
+<<<<<<< HEAD
 [Ww][Ii][Nn]32/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
@@ -350,3 +371,16 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+=======
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Visual Studio 2015
+.vs/
+>>>>>>> a9ae1d7f751c051c91ce407d4413a2c5384b7d90
